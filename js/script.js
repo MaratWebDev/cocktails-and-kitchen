@@ -45,4 +45,29 @@ $(document).ready(function() {
         }
     });
 
+
+    // Adding FitVids to resize smoothly <iframe>
+
+    $(".box").fitVids();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
