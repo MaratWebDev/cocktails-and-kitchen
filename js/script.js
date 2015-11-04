@@ -13,4 +13,16 @@ $(document).ready(function() {
     //   var drinkSeason = $(this).data('season');
     //   var drinkType = $(this).data('type');
     // });
+  
+  // Adding function closing navigation bar after clicking <li>
+
+    $('#menu li').on('click', function(){
+      $('header').removeClass('active')
+      $('.intro').removeClass('active')
+      $('section').removeClass('active')
+      $('#menu').removeClass('active')
+      $('footer').removeClass('active')
+    });
+
+
 });

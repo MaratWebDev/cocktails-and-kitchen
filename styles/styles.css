@@ -380,8 +380,12 @@ footer .container {
     vertical-align: middle;
     width: 50%;
   }
-  article .box .feed p {font-size: 15px;line-height: 24px;}
-  footer .box {height: 100%;}
+  article .box .feed p {
+    font-size: 15px;line-height: 24px;
+  }
+  footer .box {
+    height: 100%;
+  }
 }
 @media only screen and (min-width: 767px) and (max-width: 991px) {
   article .box {
@@ -390,7 +394,9 @@ footer .container {
     vertical-align: middle;
     width: 50%;
   }
-  article .box .feed p {font-size: 15px;line-height: 24px;}
+  article .box .feed p {
+    font-size: 15px;line-height: 24px;
+  }
   footer .box {
     height: 100%;
   }
