@@ -362,76 +362,7 @@ footer .container {
     height: 100%;
   }
 }
-@media only screen and (min-width: 640px) {
-  article .box {
-    display: inline-block;
-    margin: 0 -2px;
-    vertical-align: middle;
-    width: 50%;
-  }
-  article .box .feed p {
-    font-size: 13px;
-  }
-  footer .box {
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  article .box {
-    display: inline-block;
-    margin: 0 -2px;
-    vertical-align: middle;
-    width: 50%;
-  }
-  article .box .feed p {
-    font-size: 15px;line-height: 24px;
-  }
-  footer .box {
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  article .box {
-    display: inline-block;
-    margin: 0 -2px;
-    vertical-align: middle;
-    width: 50%;
-  }
-  article .box .feed p {
-    font-size: 15px;line-height: 24px;
-  }
-  footer .box {
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  article .box {
-    display: inline-block;
-    margin: 0 -2px;
-    vertical-align: middle;
-    width: 50%;
-  }
-  article .box .feed p {
-    font-size: 15px;line-height: 24px;
-  }
-  footer .box {
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 767px) and (max-width: 991px) {
-  article .box {
-    display: inline-block;
-    margin: 0 -2px;
-    vertical-align: middle;
-    width: 50%;
-  }
-  article .box .feed p {
-    font-size: 15px;line-height: 24px;
-  }
-  footer .box {
-    height: 100%;
-  }
-}
+
 @media only screen and (max-width: 528px) {  
   article .box .feed {
     margin: 15px 0 25px;
@@ -449,16 +380,5 @@ footer .container {
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
             transform: rotate(45deg);
-  }
-}
-@media only screen and (max-width: 240px) {
-  .intro {
-    display: none
-  }
-  section {
-    margin-top: 57px
-  }
-  article .box .feed p {
-    font-size: 12px;
   }
 }
