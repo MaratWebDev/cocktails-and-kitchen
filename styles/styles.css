@@ -262,7 +262,7 @@ article:nth-child(2n) .box .feed {
 }
 article .box:before {
   margin-top: 88px;
-  background: #FFF;
+  background: #DDF1FA;
   content: "";
   margin-top: -10px;
   position: absolute;
