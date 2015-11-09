@@ -61,14 +61,17 @@ $(document).ready(function() {
         scroll_pos = $(this).scrollTop();
 
         if (scroll_pos < 250) {
+
+            $("header").removeClass('dark');
           
-            $("header").css('background-color', '#DDF1FA');
-            $("h1").css("color", "#000");        
+            // $("header").css('background-color', '#DDF1FA');
+            // $("h1").css("color", "#000");        
         }
         else if (scroll_pos > 250) {
+            $("header").addClass('dark');
 
-            $("header").css('background-color', '#448490')
-            $("h1").css('color', '#fff');
+            // $("header").css('background-color', '#448490')
+            // $("h1").css('color', '#fff');
         }
 
     })
