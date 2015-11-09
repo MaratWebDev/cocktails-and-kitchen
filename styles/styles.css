@@ -215,12 +215,18 @@ section {
   line-height: 28px;
   margin: 0;
   overflow: hidden;
-  padding: 5px;
+  padding: 0;
   position: relative;
 }
 #menu li:last-child {
   border: 0;
 }
+
+#menu li a {
+  display: block;
+  padding: 5px 5px 0 20px;  
+}
+
 #menu {
   border-right: 1px solid #161616;
   left: -205px;
