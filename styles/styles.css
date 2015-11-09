@@ -358,8 +358,8 @@ footer .container {
     width: 50%;
   }
   article .box .feed p {
-    font-size: 11px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 1.6;
   }
   footer .box {
     height: 100%;
