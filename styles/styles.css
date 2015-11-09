@@ -314,11 +314,14 @@ footer p {
   max-width: 500px;
 }
 
-footer a {
-  color: darkgrey;
+footer a,
+.year p,
+.footer p{
+  color: #FF5B06;
 }
 
-footer .footer, .year {
+footer .footer, 
+.year {
   height: 100%;
   padding: 20px 10px 20px;
 }
