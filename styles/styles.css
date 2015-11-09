@@ -24,6 +24,12 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+/* Added as part of responsive meta tags in html*/
+
+@-ms-viewport{
+  width: device-width;
+}
+
 
 html {
   background: #DDF1FA;
@@ -84,7 +90,8 @@ header {
   height: initial;
   padding: 5px;
   width: initial;
-  
+  background-color: #DDF1FA;
+
   -webkit-transform: translate3d(0,0,0);
      -moz-transform: translate3d(0,0,0);
           transform: translate3d(0,0,0);
@@ -120,6 +127,20 @@ header h1 {
   width: 150px;
   
 }
+
+
+/* Adding class for scrolling effect in header at a certain position*/
+
+.dark {
+  background-color: #448490;
+}
+.dark h1 {
+  color: #fff;
+}
+
+
+
+
 .intro {
   /* fallback */
   /*background-color: #DDF1FA;*/
@@ -357,10 +378,14 @@ footer .container {
     vertical-align: middle;
     width: 50%;
   }
+<<<<<<< HEAD
   /*article .box .feed p {
     font-size: 14px;
     line-height: 1.6;
   }*/
+=======
+  
+>>>>>>> gh-pages
   footer .box {
     height: 100%;
   }
