@@ -25,6 +25,9 @@
           box-sizing: border-box;
 }
 
+html {
+  background: #DDF1FA;
+}
 
 html, body {
   color: #555;
@@ -71,7 +74,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 10px 10px;
 }
 header {
-  background: #F4F9FC;
   padding: 10px 10px;
   position: fixed;
   top: 0;
@@ -119,7 +121,22 @@ header h1 {
   
 }
 .intro {
-  margin: 57px auto 0px;
+  /* fallback */
+  /*background-color: #DDF1FA;*/
+  
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 102% 62%, 101% 100%, from(#DDF1FA), to(#448490));
+
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #DDF1FA, #448490);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #DDF1FA, #448490);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #DDF1FA, #448490);
+  margin: 88px auto 0px;
   padding: 0;
   -webkit-transform: translate3d(0,0,0);
      -moz-transform: translate3d(0,0,0);
@@ -128,6 +145,12 @@ header h1 {
      -moz-transition: all 500ms ease-in-out;
           transition: all 500ms ease-in-out;
 }
+
+  .intro img {
+    max-width: 616px;
+    height: auto;
+    margin: auto;
+  }
 section, article, div, .box {
   overflow: hidden;
   position: relative;
@@ -199,6 +222,7 @@ section {
   font-weight: 400;
 }
 
+
 section.active, header.active, .intro.active, #menu.active, footer.active {
   -webkit-transform: translate3d(205px,0,0);
      -moz-transform: translate3d(205px,0,0);
@@ -237,7 +261,8 @@ article:nth-child(2n) .box .feed {
           transform: rotate3d(0,1,0,180deg);
 }
 article .box:before {
-  background: #FFF;
+  margin-top: 88px;
+  background: #DDF1FA;
   content: "";
   margin-top: -10px;
   position: absolute;
@@ -281,13 +306,22 @@ footer {
 footer h2 {
   margin: 20px 10px 20px;
 }
+
 footer p {
   color: #656565;
   margin: 10px auto 10px;
   text-align: center;
   max-width: 500px;
 }
-footer .footer, .year {
+
+footer a,
+.year p,
+.footer p{
+  color: #FF5B06;
+}
+
+footer .footer, 
+.year {
   height: 100%;
   padding: 20px 10px 20px;
 }
@@ -324,77 +358,14 @@ footer .container {
     width: 50%;
   }
   article .box .feed p {
-    font-size: 11px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 1.6;
   }
   footer .box {
     height: 100%;
   }
 }
-@media only screen and (min-width: 640px) {
-  article .box {
-    display: inline-block;
-    margin: 0 -2px;
-    vertical-align: middle;
-    width: 50%;
-  }
-  article .box .feed p {
-    font-size: 13px;
-  }
-  footer .box {
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  article .box {
-    display: inline-block;
-    margin: 0 -2px;
-    vertical-align: middle;
-    width: 50%;
-  }
-  article .box .feed p {
-    font-size: 15px;line-height: 24px;
-  }
-  footer .box {
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  article .box {
-    display: inline-block;
-    margin: 0 -2px;
-    vertical-align: middle;
-    width: 50%;
-  }
-  article .box .feed p {
-    font-size: 15px;line-height: 24px;
-  }
-  footer .box {
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  article .box {
-    display: inline-block;
-    margin: 0 -2px;
-    vertical-align: middle;
-    width: 50%;
-  }
-  article .box .feed p {font-size: 15px;line-height: 24px;}
-  footer .box {height: 100%;}
-}
-@media only screen and (min-width: 767px) and (max-width: 991px) {
-  article .box {
-    display: inline-block;
-    margin: 0 -2px;
-    vertical-align: middle;
-    width: 50%;
-  }
-  article .box .feed p {font-size: 15px;line-height: 24px;}
-  footer .box {
-    height: 100%;
-  }
-}
+
 @media only screen and (max-width: 528px) {  
   article .box .feed {
     margin: 15px 0 25px;
@@ -412,16 +383,5 @@ footer .container {
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
             transform: rotate(45deg);
-  }
-}
-@media only screen and (max-width: 240px) {
-  .intro {
-    display: none
-  }
-  section {
-    margin-top: 57px
-  }
-  article .box .feed p {
-    font-size: 12px;
   }
 }
