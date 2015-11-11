@@ -309,7 +309,7 @@ article .box:before {
   width: initial;
 }
 .box .feed h2 {
-  color: #FF5B06;
+  color: #6118A1;
   font-weight: 400;
   letter-spacing: 1px;
 }
@@ -341,10 +341,13 @@ footer p {
   max-width: 500px;
 }
 
-footer a,
+footer a {
+  color: #6118A1;
+}
+
 .year p,
-.footer p{
-  color: #FF5B06;
+.footer p a {
+  color: #fff;
 }
 
 footer .footer, 
